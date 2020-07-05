@@ -1,0 +1,106 @@
+about:blank:1 Failed to load resource: net::ERR_UNKNOWN_URL_SCHEME
+
+function extProductDetails(){
+    var x= document.getElementById('prodDetails');
+    if(x!==null){
+        var li = x.getElementsByTagName('tr');
+    var ret = [];
+    for(i=0;i<li.length;i++){
+    var tds = li[i].getElementsByTagName('td');
+        ret.push({key:tds[0].innerText, val:tds[1].innerText});
+    }
+    return ret;
+    }
+    return [];
+}
+function extProductDescription(){
+    return document.getElementById('productDescription').innerText;
+}
+function extFeatures(){
+    var x = document.getElementById('feature-bullets');
+    var li = x.getElementsByTagName('li');
+    var ret = [];
+    for(i=0;i<li.length;i++){
+        ret.push(li[i].innerText);
+    }
+    return ret;
+}
+function extPrice(){
+    return document.getElementById('priceblock_ourprice').innerText;
+}
+function extNumRating(){
+    return document.getElementById('acrCustomerReviewText').innerText;
+}
+function extRating(){
+    return document.getElementById('acrPopover').title;
+}
+function extBy(){
+    return document.getElementById('bylineInfo').innerText;
+}
+function extTitle(){
+    return document.getElementById('productTitle').innerText;
+}
+function extract(){
+return {
+title: extTitle(),
+by: extBy(),
+rating: extRating(),
+numRating: extNumRating(),
+price: extPrice(),
+features: extFeatures(),
+description: extProductDescription(),
+details: extProductDetails(),
+};
+}
+JSON.stringify(extract());
+"{"title":"BenQ GW2283, 21.5 inch LED Backlit Computer Monitor, Full HD, Borderless, IPS Monitor, Brightness Intelligence Technology, Adaptive Eye Care Technology, Dual HDMI and in-Built Speakers","by":"BenQ","rating":"4.5 out of 5 stars","numRating":"1,996 ratings","price":"₹ 7,890.00","features":["Stunning Full HD Display : Enjoy immaculate image quality with 1920x1080 resolution and 178 degree wide viewing angles","Edge To Edge Slim Bezel Design:Minimize distractions and create virtually seamless multi-panel configurations","Dual HDMI Connectivity: 2 HDMI portsoffer convenience to switch between media devices with ease","Brightness Intelligence Technology: Actively adjusts brightnessaccording to on-screen content and ambient light conditions","Cable Management System: Neatly hides cables inside the monitor stand","IPS Wide Viewing Angle Technology","8-Bit Color Display","TUV Rheinland Certification","Flicker-Free Technology,green Certification Assurance","For any product related queries contact 18004199979 or drop a email on service-in@BenQ.Com"],"description":"Style name:22-inch (IPS)  |  Pattern name:Monitor\n\nDesigned for beautiful simplicity, BenQ’s GW2283 21.5-inch frameless monitor combines ultra slim bezels with hidden cable management. Complementing BenQ’s exclusive Eye-CareTM Technology with Low Blue Light Technology and Flicker-Free performance for extended viewing comfort, the industry-leading brightness intelligence technology delivers exquisite details in any ambient lighting environment. Built with the dream combination of LED with IPS panel, GW2283 is bound to bring a whole new visual experience and enjoyment to you with truly authentic colors, deeper blacks, higher contrast and sharper details.","details":[{"key":"Brand","val":"BenQ"},{"key":"Colour","val":"Black"},{"key":"Item Height","val":"39.2 Centimeters"},{"key":"Item Width","val":"18.3 Centimeters"},{"key":"Screen Size","val":"21.5 Inches"},{"key":"Maximum Display Resolution","val":"1920 x 1080 (Full HD)"},{"key":"Item Weight","val":"2.9 Kg"},{"key":"Product Dimensions","val":"48.9 x 18.3 x 39.2 cm"},{"key":"Item model number","val":"9H.LHLLA.TBE"},{"key":"Number of HDMI Ports","val":"2"},{"key":"Number of Audio-out Ports","val":"1"},{"key":"Number of VGA Ports","val":"1"},{"key":"Wattage","val":"25 Watts"},{"key":"Included Components","val":"Monitor, Power Cable, VGA Cable, User Guide and Manual"},{"key":" ","val":" "},{"key":"ASIN","val":"B07LDH32ZP"},{"key":"Customer Reviews","val":"4.5 out of 5 stars\n1,996 customer ratings"},{"key":"Amazon Bestsellers Rank","val":"#97 in Computers & Accessories (See Top 100 in Computers & Accessories)\n#2 in Monitors"},{"key":"Date First Available","val":"15 December 2018"},{"key":" ","val":" "}]}"
+ref=sr_1_1_sspa?crid=ZZPBPGSNXRB&dchild=1&keywords=monitor+for+laptop&qid=1593831270&sprefix=monitor%2Caps%2C336&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFQVjMzOTdPM01GWlgmZW5jcnlwdGVkSWQ9QTA2Nzc0OTAyQjVFMVRWSjJXVFM2JmVuY3J5cHRlZEFkSWQ9QTA5NTc3NTEyWTVGMTMzWkpPQlFMJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==:1 [DOM] Found 3 elements with non-unique id #all-offers-display-is-customizable-asin: (More info: https://goo.gl/9p2vKq) <input type=​"hidden" name value=​"false" id=​"all-offers-display-is-customizable-asin">​ <input type=​"hidden" name value=​"false" id=​"all-offers-display-is-customizable-asin">​ <input type=​"hidden" name value=​"false" id=​"all-offers-display-is-customizable-asin">​
+ref=sr_1_1_sspa?crid=ZZPBPGSNXRB&dchild=1&keywords=monitor+for+laptop&qid=1593831270&sprefix=monitor%2Caps%2C336&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFQVjMzOTdPM01GWlgmZW5jcnlwdGVkSWQ9QTA2Nzc0OTAyQjVFMVRWSjJXVFM2JmVuY3J5cHRlZEFkSWQ9QTA5NTc3NTEyWTVGMTMzWkpPQlFMJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==:1 [DOM] Found 3 elements with non-unique id #all-offers-display-params: (More info: https://goo.gl/9p2vKq) <input type=​"hidden" name id=​"all-offers-display-params" data-asin=​"B07LDH32ZP" data-m data-pinnedofferhash data-qid=​"1593831270" data-smid data-sourcecustomerorglistid data-sourcecustomerorglistitemid data-sr=​"8-1-spons">​ <input type=​"hidden" name id=​"all-offers-display-params" data-asin=​"B07LDH32ZP" data-m data-pinnedofferhash data-qid=​"1593831270" data-smid data-sourcecustomerorglistid data-sourcecustomerorglistitemid data-sr=​"8-1-spons">​ <input type=​"hidden" name id=​"all-offers-display-params" data-asin=​"B07LDH32ZP" data-m data-pinnedofferhash data-qid=​"1593831270" data-smid data-sourcecustomerorglistid data-sourcecustomerorglistitemid data-sr=​"8-1-spons">​
+ref=sr_1_1_sspa?crid=ZZPBPGSNXRB&dchild=1&keywords=monitor+for+laptop&qid=1593831270&sprefix=monitor%2Caps%2C336&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFQVjMzOTdPM01GWlgmZW5jcnlwdGVkSWQ9QTA2Nzc0OTAyQjVFMVRWSjJXVFM2JmVuY3J5cHRlZEFkSWQ9QTA5NTc3NTEyWTVGMTMzWkpPQlFMJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==:1 [DOM] Found 3 elements with non-unique id #all-offers-display-reload-param: (More info: https://goo.gl/9p2vKq) <input type=​"hidden" name value=​"true" id=​"all-offers-display-reload-param">​ <input type=​"hidden" name value=​"true" id=​"all-offers-display-reload-param">​ <input type=​"hidden" name value=​"true" id=​"all-offers-display-reload-param">​
+ref=sr_1_1_sspa?crid=ZZPBPGSNXRB&dchild=1&keywords=monitor+for+laptop&qid=1593831270&sprefix=monitor%2Caps%2C336&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFQVjMzOTdPM01GWlgmZW5jcnlwdGVkSWQ9QTA2Nzc0OTAyQjVFMVRWSjJXVFM2JmVuY3J5cHRlZEFkSWQ9QTA5NTc3NTEyWTVGMTMzWkpPQlFMJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==:1 [DOM] Found 3 elements with non-unique id #all-offers-display-weblab-name: (More info: https://goo.gl/9p2vKq) <input type=​"hidden" name value=​"DP_ALL_OFFERS_DISPLAY_DESKTOP_MASTER_221923" id=​"all-offers-display-weblab-name">​ <input type=​"hidden" name value=​"DP_ALL_OFFERS_DISPLAY_DESKTOP_MASTER_221923" id=​"all-offers-display-weblab-name">​ <input type=​"hidden" name value=​"DP_ALL_OFFERS_DISPLAY_DESKTOP_MASTER_221923" id=​"all-offers-display-weblab-name">​
+ref=sr_1_1_sspa?crid=ZZPBPGSNXRB&dchild=1&keywords=monitor+for+laptop&qid=1593831270&sprefix=monitor%2Caps%2C336&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFQVjMzOTdPM01GWlgmZW5jcnlwdGVkSWQ9QTA2Nzc0OTAyQjVFMVRWSjJXVFM2JmVuY3J5cHRlZEFkSWQ9QTA5NTc3NTEyWTVGMTMzWkpPQlFMJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==:1 [DOM] Found 3 elements with non-unique id #all-offers-display-weblab-treatment: (More info: https://goo.gl/9p2vKq) <input type=​"hidden" name value=​"C" id=​"all-offers-display-weblab-treatment">​ <input type=​"hidden" name value=​"C" id=​"all-offers-display-weblab-treatment">​ <input type=​"hidden" name value=​"C" id=​"all-offers-display-weblab-treatment">​
+Grammarly.js:2 [DEFAULT]: WARN : Using DEFAULT root logger
+t.printToConsole @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+t.logImpl @ Grammarly.js:2
+e.log @ Grammarly.js:2
+e.warn @ Grammarly.js:2
+e.getRootLogger @ Grammarly.js:2
+get @ Grammarly.js:2
+e.getLogger @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+Grammarly.js:2 [WARNING] Using default timeseries implementation.
+e.getRootMetric @ Grammarly.js:2
+e @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+t.pipe @ Grammarly.js:2
+e.rootLogLevelGetter @ Grammarly.js:2
+u @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+n @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+(anonymous) @ Grammarly.js:2
+A cookie associated with a cross-site resource at <URL> was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at <URL> and <URL>.
+A cookie associated with a cross-site resource at <URL> was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at <URL> and <URL>.
+A cookie associated with a cross-site resource at <URL> was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at <URL> and <URL>.
+A cookie associated with a cross-site resource at <URL> was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at <URL> and <URL>.
+A cookie associated with a cross-site resource at <URL> was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at <URL> and <URL>.
+01VMbgmrugL._RC|01x4giTy+uL.js,41I5+4VSayL.js,01r9LpT6pbL.js,312HxCI+7TL.js,11yAqqXzKZL.js,81BB3NCXqrL.js,01rfUB9VH5L.js_.js?AUIClients/Brila:35 Generating new titleSessionId <5033324637580828000>
