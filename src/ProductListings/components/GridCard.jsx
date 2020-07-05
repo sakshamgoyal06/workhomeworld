@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   cardStyle: {
     maxWidth: "300px",
     [theme.breakpoints.down("xs")]: {
-      maxWidth: "100%",
+      minWidth: "100%",
     },
   },
 
@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   cardMediaStyle: {
+    backgroundSize: "contain",
     height: "200px",
     width: "100%",
     paddingTop: "1%",

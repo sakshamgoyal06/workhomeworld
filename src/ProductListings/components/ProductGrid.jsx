@@ -5,7 +5,8 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   gridContainer: {
-    padding: theme.spacing(2), 
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
   },
 }))
 const ProductGrid = (props) => {

@@ -57,6 +57,7 @@ var theme = createMuiTheme({
     ].join(","),
   },
     palette: {
+      
     primary: {
       light: colors.primaryLight,
       main: colors.primary,

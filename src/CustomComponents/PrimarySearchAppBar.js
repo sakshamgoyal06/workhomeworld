@@ -25,6 +25,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
+      fontFamily: theme.typography.font2,
+      fontColor: theme.palette.primary,
     },
   },
   
@@ -136,8 +138,8 @@ const PrimarySearchAppBar = ({productListMaster}) => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+          <Typography className={classes.title} variant="h4" noWrap>
+            WorkHomeWorld
           </Typography>
           
             <div><SearchBar productMasterList={productListMaster} /></div>
