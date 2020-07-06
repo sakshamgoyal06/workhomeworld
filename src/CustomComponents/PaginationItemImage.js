@@ -223,9 +223,13 @@ export const styles = (theme) => ({
     border: "1px solid",
     borderColor: theme.palette.secondary.main,
   },
-  /* Styles applied to the icon element. */
+/* Styles applied to the icon element. */
+  iconButton: {
+    backgroundColor: theme.palette.secondary.main,
+  },
   icon: {
     fontSize: theme.typography.pxToRem(20),
+    color: theme.palette.primary.contrastText,
     margin: "0 -8px",
   },
 });
@@ -291,6 +295,7 @@ const PaginationItemImage = React.forwardRef(function PaginationItem(props, ref)
           [classes.disabled]: disabled,
           [classes.selected]: selected,
           [classes[`size${capitalize(size)}`]]: size !== "medium",
+          [classes.iconButton] : type==="next" || type==="previous",
         },
         className
       )}

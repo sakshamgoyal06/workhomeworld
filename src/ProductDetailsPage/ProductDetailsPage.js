@@ -1,17 +1,24 @@
 import React from "react";
 import PaginationControlled from "../CustomComponents/PaginationControlled";
-import { Grid, CardMedia, Typography } from "@material-ui/core";
+import { Grid, CardMedia, Typography, Button, Paper } from "@material-ui/core";
 import PrimarySearchAppBar from "../CustomComponents/PrimarySearchAppBar";
 import Rating from "@material-ui/lab/Rating";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
   gridPageContainer: {},
+  gridBuyCartConsole: {},
+  gridItemNameBy: {},
   PrimarySearchAppBar: {},
   gridMediaContainer: {
+    maxHeight: "600px",
     margin: "0px",
-    border: "1px solid",
-    borderRightColor: theme.palette.secondary.main,
+
+    [theme.breakpoints.up("sm")]: {
+      position: "sticky",
+      WebkitPosition: "sticky",
+      top: "5px",
+    },
   },
   gridMediaItem: {},
   gridPaginationItem: {},
@@ -94,20 +101,60 @@ const ProductDetailsPage = (props) => {
               />
             </Grid>
           </Grid>
-          <Grid item className={classes.gridDetailsContainer}>
-            <Typography> {title} </Typography>
-            <Typography> {price} </Typography>
-            <Rating
-              precision={0.5}
-              name="half-rating-read"
-              size={"medium"}
-              readOnly
-              defaultValue={0}
-              value={parseFloat(rating)}
-            />
+          <Grid
+            item
+             direction="column"
+                justify="space-evenly"
+                alignItems="center"
+            container
+            xs={12}
+            sm={6}
+            lg={4}
+            className={classes.gridDetailsContainer}
+          >
+            <Grid item className={classes.gridItemNameBy}>
+              <Typography variant="h4"> {title} </Typography>
+              <Typography align="left" variant="body2">
+                by : {by}
+              </Typography>
+            </Grid>
+            <Grid item className={classes.gridItemNameBy}>
+              <Typography variant="h5"> {description} </Typography>
+            </Grid>
+            <Grid item className={classes.gridItemNameBy}>
+              <Typography> {price} </Typography>
+              <Rating
+                precision={0.5}
+                name="half-rating-read"
+                size={"medium"}
+                readOnly
+                defaultValue={0}
+                value={parseFloat(rating)}
+              />
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={12} lg={2}>
+            <Paper
+              variant="outlined" square
+            >
+              <Grid
+                container
+                direction="column"
+                justify="flex-start"
+                alignItems="center"
+                className={classes.gridBuyCartConsole}
+              >
+                <Grid item>
+                  <Button> Add to Cart</Button>
+                </Grid>
+                <Grid item>
+                  <Button> Buy Now</Button>
+                </Grid>
+              </Grid>
+            </Paper>
           </Grid>
         </Grid>
-        <Grid item></Grid>
+
         <Grid item></Grid>
       </Grid>
     </div>
